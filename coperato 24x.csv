@@ -1,0 +1,4 @@
+﻿"Agent #","Name","Call Attempts","ASR","ACD","Answered","Unanswered","Effective","Duration","Unique","Dialer Login","Dialer Idle Time","Dialer Talk Time","Dialer Break Time","Dialer Call Count","Dialer Effective Calls","Dialer ACD",
+"1005","Berry Gilmour","32","56.25%","00:00:25","18","14","3","00:14:13","18","00:00:00","00:00:00","00:00:00","00:00:00","0","0","00:00:00",
+"1009","Steven Silver","12","58.33%","00:00:04","7","5","0","00:03:13","7","00:00:00","00:00:00","00:00:00","00:00:00","0","0","00:00:00",
+"1019","Misa Wander","26","30.77%","00:00:14","8","18","1","00:08:15","18","00:00:00","00:00:00","00:00:00","00:00:00","0","0","00:00:00",
