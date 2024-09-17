@@ -1,3 +1,4 @@
+#Marcus was here
 import pandas as pd
 import re
 from collections import defaultdict
@@ -133,10 +134,10 @@ def process_files(df_files, df_agents):
     
     for df, filename in df_files:
         if filename in ['voiso summitlife.csv', 'voiso traling.csv', 'voiso 24x.csv']:
-            duration_column = 'Duration'
+            duration_column = 'Talk time'
             is_voicespin = False
         elif filename in ['coperato traling.csv', 'coperato Signix.csv',  'coperato 24x.csv']:
-            duration_column = 'Duration'
+            duration_column = 'ACD'
             is_voicespin = False
         elif filename == 'voicespin.csv':
             duration_column = 'BILLSEC'
