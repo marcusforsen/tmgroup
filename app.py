@@ -118,7 +118,7 @@ def extract_agent_names(df, filename):
     """Extract and normalize agent names from different columns."""
     if filename in ['voiso summitlife.csv', 'voiso traling.csv', 'voiso 24x.csv']:
         df.loc[:, 'Agent_list'] = df['Agent(s)'].apply(lambda x: [name.strip().lower() for name in str(x).split('; ')] if pd.notna(x) else [])
-    elif filename in ['coperato traling2.csv', 'coperato Signix2.csv',  'coperato 24x2.csv']:
+    elif filename in ['coperato traling2.csv', 'coperato signix2.csv',  'coperato 24x2.csv']:
         df.loc[:, 'Agent_list'] = df['Name'].apply(lambda x: x.strip().lower() if pd.notna(x) else '')
     elif filename == 'voicespin.csv':
         df.loc[:, 'Agent_list'] = df['AGENT'].apply(extract_name)
@@ -136,7 +136,7 @@ def process_files(df_files, df_agents):
         if filename in ['voiso summitlife.csv', 'voiso traling.csv', 'voiso 24x.csv']:
             duration_column = 'Talk time'
             is_voicespin = False
-        elif filename in ['coperato traling2.csv', 'coperato Signix2.csv',  'coperato 24x2.csv']:
+        elif filename in ['coperato traling2.csv', 'coperato signix2.csv',  'coperato 24x2.csv']:
             duration_column = 'Duration'
             df = df[df['Disposition'] == 'ANSWERED']
             is_voicespin = False
@@ -281,7 +281,7 @@ if __name__ == "__main__":
         (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\voiso traling.csv'), 'voiso traling.csv'),
         (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\voiso 24x.csv'), 'voiso 24x.csv'),
         (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato traling2.csv'), 'coperato traling2.csv'),
-        (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato Signix2.csv'), 'coperato Signix2.csv'),
+        (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato signix2.csv'), 'coperato signix2.csv'),
         (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato 24x2.csv'), 'coperato 24x2.csv'),
         (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\voicespin.csv'), 'voicespin.csv')
     ]

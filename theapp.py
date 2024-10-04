@@ -142,25 +142,25 @@ ws_retention = wb['Retention Agents']
 
 # Define colors for each desk
 desk_colors_conversion = {
-    'Team Vincent': 'FFEBEE',     # Very light red
-    'Team Elena': 'E8F0FE',      # Very light blue
-    'Team Eden': 'E8F0FE',      # Very light blue
-    'Team Larisa': 'FFEDD5',     # Light peach
-    'Team Rahul': 'FAE1C4',      # Very light beige
-    'Team Sameer': 'F4BD7D',      # Very light beige
-    'Team Elly': 'FFCCCC',        # Very light coral
-    'Team Myles': '1485b5'        # Very light coral
+    'Team Vincent': 'FFFFFF',     # Very light red
+    'Team Elena': 'FFFFFF',      # Very light blue
+    'Team Eden': 'FFFFFF',      # Very light blue
+    'Team Larisa': 'FFFFFF',     # Light peach
+    'Team Rahul': 'FFFFFF',      # Very light beige
+    'Team Sameer': 'FFFFFF',      # Very light beige
+    'Team Elly': 'FFFFFF',        # Very light coral
+    'Team Myles': 'FFFFFF'        # Very light coral
 }
 
 desk_colors_retention = {
-    'Aarav Team': 'FAE1C4',    # Very light beige
-    'Ajay Team': 'FFF9DB',     # Light gold yellow
-    'Japan Team': 'FFEBEE',    # Very light red
-    'Korean Team': 'FFE4E1',   # Very light pink
-    'AKA Team': 'E6FFE6',      # Very light green
-    'French': 'E8F0FE', # Very light blue
-    'Spanish': 'FFEDD5',# Light peach
-    'Portuguese': 'D4EFD4'  # Very light green
+    'Aarav Team': 'FFFFFF',    # Very light beige
+    'Ajay Team': 'FFFFFF',     # Light gold yellow
+    'Japan Team': 'FFFFFF',    # Very light red
+    'Korean Team': 'FFFFFF',   # Very light pink
+    'AKA Team': 'FFFFFF',      # Very light green
+    'French': 'FFFFFF', # Very light blue
+    'Spanish': 'FFFFFF',# Light peach
+    'Portuguese': 'FFFFFF'  # Very light green
 }
 
 # Define grey color for highlighting special values

@@ -46,7 +46,7 @@ def process_file(df, filename, call_attempts, file_call_attempts, conversion_age
         for agent, unique_count in unique_counts.items():
             file_call_attempts[filename][f"{agent}_unique"] = unique_count
 
-    elif filename in ['coperato traling.csv', 'coperato Signix.csv', 'coperato 24x.csv']:
+    elif filename in ['coperato traling.csv', 'coperato signix.csv', 'coperato 24x.csv']:
         df['Agent_list'] = df['Name'].apply(lambda x: x.strip().lower() if pd.notna(x) else '')
         df = df[df['Agent_list'].apply(is_valid_agent)]
 
@@ -193,7 +193,7 @@ df_files = [
     (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\voiso traling.csv'), 'voiso traling.csv'),
     (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\voiso 24x.csv'), 'voiso 24x.csv'),
     (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato traling.csv'), 'coperato traling.csv'),
-    (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato Signix.csv'), 'coperato Signix.csv'),
+    (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato signix.csv'), 'coperato signix.csv'),
     (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\coperato 24x.csv'), 'coperato 24x.csv'),
     (pd.read_csv(r'C:\Users\marcus.forsen\Desktop\new project\voicespin.csv'), 'voicespin.csv')
 ]
